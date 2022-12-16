@@ -8,7 +8,31 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-
+    <div id="calculator">
+        <div id="display">
+        </div>
+        <div id="numpad">
+            <button id="canc" onclick="">C</button>
+            <button id="divide" onclick="clickOp(':')">:</button>
+            <button id="multiply" onclick="clickOp('x')">X</button>
+            <button id="del" onclick="">Del</button>
+            <button id="7" onclick="clickNum('7')">7</button>
+            <button id="8" onclick="clickNum('8')">8</button>
+            <button id="9" onclick="clickNum('9')">9</button>
+            <button id="sub" onclick="clickOp('-')">-</button>
+            <button id="4" onclick="clickNum('4')">4</button>
+            <button id="5" onclick="clickNum('5')">5</button>
+            <button id="6" onclick="clickNum('6')">6</button>
+            <button id="add" onclick="clickOp('+')">+</button>
+            <button id="1" onclick="clickNum('1')">1</button>
+            <button id="2" onclick="clickNum('2')">2</button>
+            <button id="3" onclick="clickNum('3')">3</button>
+            <button id="result" onclick="result()">=</button>
+            <button id="perc" onclick="">%</button>
+            <button id="0" onclick="clickNum('0')">0</button>
+            <button id="comma" onclick="">,</button>
+        </div>
+    </div>
 
     <script type="text/javascript" src="/javascript.js"></script>
 </body>
