@@ -8,13 +8,30 @@
 
 body{
     background-color: var(--dark-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calculator{
+    width: 400px;
+    padding: 10px;
+    background-color: var(--green);
+    border-radius: 8px;
 }
 
 #numpad{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(50px, auto);
+    gap:5px
 }
 #result{
     grid-row: span 2;
+}
+#display{
+    min-height: 100px;
+    background-color: var(--orange);
+    margin-bottom: 5px;
 }
