@@ -1,6 +1,7 @@
 let buffer = "";
 let operation = "";
 let num1, num2;
+const bigDisplay = document.querySelector('#big-display');
 
 function clickNum(string){
     buffer += string;
@@ -36,6 +37,7 @@ function result(){
 }
 function add(a, b){
  //   console.log(a + b);
+ bigDisplay.textContent = a + b;
     return a + b;
 }
 function subtract(a, b){
