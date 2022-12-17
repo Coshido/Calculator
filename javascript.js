@@ -1,10 +1,17 @@
 let buffer = "";
 let operation = "";
 let num1, num2;
+let clrscr = false;
 const bigDisplay = document.querySelector('#big-display');
+const smallDisplay = document.querySelector('#small-display');
 
 function clickNum(string){
+    if(clrscr){
+        smallDisplay.textContent = "";
+        clrscr = false;
+    };
     buffer += string;
+    smallDisplay.textContent += string;
  //   console.log("num: " + string + ", buffer: " + buffer);
 
 }
@@ -13,6 +20,7 @@ function clickOp(string){
     num1 = +buffer;
     buffer = "";
     operation = string;
+    smallDisplay.textContent += " " + operation + " ";
  //   console.log("num: " + num1 + ", buffer: " + buffer + ", operation: " + operation);
 
 }
@@ -20,6 +28,7 @@ function clickOp(string){
 function result(){
     num2 = +buffer;
     buffer = "";
+    clrscr = true;
  //   console.log(num1, num2, operation);
     switch(operation){
         case '+':
