@@ -79,13 +79,13 @@ function cancel(){
     clearBigDisplay();
 }
 function del(){
+    bigBuffer = bigDisplay.textContent;
     bigBuffer = bigBuffer.substring(0, bigBuffer.length - 1);
     updateBigDisplay();
 }
 function perc(){
     bigBuffer = +bigDisplay.textContent / 100;
     smallDisplay.textContent = bigBuffer + " %";
-    updateBigDisplay();
-    
+    updateBigDisplay();  
 }
 cancel();
