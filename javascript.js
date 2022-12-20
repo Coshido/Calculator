@@ -41,9 +41,6 @@ function updateSmallDisplay(){
 function updateBigDisplay(){
     bigDisplay.textContent = bigBuffer;
 }
-function clearSmallDisplay(){
-    smallDisplay.textContent = "";
-}
 function clearBigDisplay(){
     bigDisplay.textContent = "0";
 }
@@ -57,7 +54,6 @@ function pressed(string){;
     }
 }
 function pressNumber(string){
-    //smallBuffer += string;
     bigBuffer += string;
     updateBigDisplay();
 }
